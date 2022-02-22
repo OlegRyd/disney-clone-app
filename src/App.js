@@ -1,5 +1,5 @@
 import React from "react";
-import { Counter } from "./features/counter/Counter";
+
 import "./App.css";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -16,7 +16,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/login" element={<Login />} />
-          <Route path="/detail" element={<Detail />} />
+          <Route path="/detail/:id" element={<Detail />} />
           <Route path="/" element={<Home />} />
         </Routes>
       </Router>
